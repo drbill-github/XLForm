@@ -40,5 +40,6 @@ typedef NS_ENUM(NSUInteger, XLFormDateDatePickerMode) {
 @property (nonatomic, assign) NSInteger minuteInterval;
 @property (nonatomic, copy  ) NSTimeZone* timeZone;
 @property (nonatomic, copy  ) NSLocale *locale;
+@property (nonatomic, readwrite, assign) UIDatePickerStyle preferredDatePickerStyle API_AVAILABLE(ios(13.4)) API_UNAVAILABLE(tvos, watchos);
 
 @end
